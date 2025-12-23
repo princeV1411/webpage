@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="card">
+        <h1>prince</h1>
+        <div id="btn-container">
+            <button onclick="chec()">click</button>
+        </div>
+    </div>
+    <script>
+        var btn = document.querySelector("button");
+        var tx = document.querySelector("h1");
+        var card = document.querySelector("#card");
+        btn.addEventListener("click",function(){
+            tx.innerHTML="friend";
+            card.style.color="green";
+        })
+    </script>
+</body>
+</html>
